@@ -5,20 +5,20 @@
 class Viscue < Formula
   desc "Your terminal password manager"
   homepage "https://github.com/rmscoal/viscue"
-  version "0.1.1"
+  version "0.1.2"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/rmscoal/viscue/releases/download/v0.1.1/viscue_0.1.1_darwin_amd64.tar.gz"
-    sha256 "f4a3eb1465741753034c64951bc8c71ea1c6b2c8acf364c1533c0d4d415b098d"
+    url "https://github.com/rmscoal/viscue/releases/download/v0.1.2/viscue_0.1.2_darwin_amd64.tar.gz"
+    sha256 "34f8758e5d39c068c65b990ac64332cbe0a24485c3c78d68af0add57e2408651"
 
     def install
       bin.install "viscue"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/rmscoal/viscue/releases/download/v0.1.1/viscue_0.1.1_darwin_arm64.tar.gz"
-    sha256 "77960f0dc741a07e227720ba5e5bf4ddce376764b74dbe5b147ad2416b8b3ff3"
+    url "https://github.com/rmscoal/viscue/releases/download/v0.1.2/viscue_0.1.2_darwin_arm64.tar.gz"
+    sha256 "d98e9aa894987935a783ac72608a91063b9f90be5f387ef57ba6910d57619312"
 
     def install
       bin.install "viscue"
